@@ -1,4 +1,6 @@
-# Small World 2 — Unofficial Simplified Chinese Language Pack
+# Small World — Unofficial Simplified Chinese Language Pack
+
+![](./assets/Default-Landscape.png)
 
 Fan / learning project. **Not affiliated with Days of Wonder, Asmodee, or Valve.**
 
