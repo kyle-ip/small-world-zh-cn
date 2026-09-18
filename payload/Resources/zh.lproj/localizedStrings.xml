@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<strings>
+
+    <!-- SSO -->
+    <subPool name="ssoStrings.xml"/>
+
+    <!-- DO NOT LOCALIZE THIS ONE -->
+    <string key="RulesLanguage">zh</string>
+
+    <string key="LeaveGameMessageBox_Title">离开游戏</string>
+    <string key="MessageBox_Yes">是</string>
+    <string key="MessageBox_No">否</string>
+    <string key="MessageBox_OK">确定</string>
+    <string key="MessageBox_Cancel">取消</string>
+
+    <string key="ComboDisplayIsPowerThenRace">1</string>
+
+    <string key="PickComboController_Title">选择种族与特殊能力组合</string>
+
+    <string key="ConquerSomeRegions_Message_Format">%s，去征服一些地区吧！</string>
+    <string key="RedeployYourTroops_Message_Format">%s，重新部署你的部队！</string>
+    <string key="RedeployYourDefeatedTroops_Message_Format">%s，重新部署你被击败的部队！</string>
+
+    <string key="NextActionLabel_Conquer">征服</string>
+    <string key="NextActionLabel_Redeploy">重新部署</string>
+    <string key="NextActionLabel_ActivateNextCombo">下一个</string>
+    <string key="NextActionLabel_FinishRedeployment">完成</string>
+    <string key="NextActionLabel_FinishTurn">完成</string>
+    <string key="NextActionLabel_MaraudingPhase">第二阶段</string>
+
+    <string key="NextActiveCombo_Title">准备就绪！</string>
+    <string key="NextActiveCombo_MessageFormat">准备使用 %s。</string>
+
+    <string key="DeclineMessageBox_Title">衰落</string>
+    <string key="DeclineMessageBox_Message">你确定要让当前活跃种族进入衰落吗？</string>
+
+    <!-- Pass and play -->
+    <string key="PassAndPlay_PrepareToPlayTitle">轮到你了！</string>
+    <string key="PassAndPlay_PrepareToPlayFormat">%s，准备开始游戏！</string>
+    <string key="PassAndPlay_PlayButton">开始</string>
+
+    <!-- String for component UI Controllers -->
+    <string key="AmazonRaceUIController_MessageFormat">你需要将 %d 个亚马逊代币移回手牌。</string>
+    <string key="PriestessRaceUIController_Message">请将象牙塔放置在你控制的一个地区。</string>
+
+    <string key="MaraudingMessageBox_Title">第二次征服阶段</string>
+    <string key="MaraudingMessageBox_Message">你想要攻击的地区需要掷强化骰；这将取消你的第二次征服阶段。
+
+你确定要攻击该地区吗？</string>
+
+    <string key="MercenaryMessageBox_Title">雇佣兵</string>
+    <string key="MercenaryMessageBox_Message">你想花费 1 枚胜利金币获得 +2 攻击加成吗？</string>
+
+    <string key="FireballMessageBox_Title">火球攻击！</string>
+    <string key="FireballMessageBox_Message">你想使用多少个火球来获得攻击加成？
+        1 个火球 = +2</string>
+    <string key="FireballMessageBox_AttackButton">攻击</string>
+
+    <!-- Race and Power -->
+    <string key="RacePowerCombo_NameFormat">%1$s %2$s</string>
+
+    <string key="swdm::AmazonRace_Name">亚马逊</string>
+    <string key="swdm::DwarfRace_Name">矮人</string>
+    <string key="swdm::ElfRace_Name">精灵</string>
+    <string key="swdm::GhoulRace_Name">食尸鬼</string>
+    <string key="swdm::GiantRace_Name">巨人</string>
+    <string key="swdm::HalflingRace_Name">半身人</string>
+    <string key="swdm::HumanRace_Name">人类</string>
+    <string key="swdm::OrcRace_Name">兽人</string>
+    <string key="swdm::RatmenRace_Name">鼠人</string>
+    <string key="swdm::SkeletonRace_Name">骷髅</string>
+    <string key="swdm::SorcererRace_Name">巫师</string>
+    <string key="swdm::TritonRace_Name">人鱼</string>
+    <string key="swdm::TrollRace_Name">巨魔</string>
+    <string key="swdm::WizardRace_Name">法师</string>
+    <string key="swdm::AlchemistPower_Name">炼金术士</string>
+    <string key="swdm::BerserkPower_Name">狂暴</string>
+    <string key="swdm::BivouackingPower_Name">露营</string>
+    <string key="swdm::CommandoPower_Name">突击队</string>
+    <string key="swdm::DiplomatPower_Name">外交官</string>
+    <string key="swdm::DragonMasterPower_Name">驯龙师</string>
+    <string key="swdm::FlyingPower_Name">飞行</string>
+    <string key="swdm::ForestPower_Name">森林</string>
+    <string key="swdm::FortifiedPower_Name">筑城</string>
+    <string key="swdm::HeroicPower_Name">英雄</string>
+    <string key="swdm::HillPower_Name">山丘</string>
+    <string key="swdm::MerchantPower_Name">商人</string>
+    <string key="swdm::MountedPower_Name">骑兵</string>
+    <string key="swdm::PillagingPower_Name">掠夺</string>
+    <string key="swdm::SeafaringPower_Name">航海</string>
+    <string key="swdm::SpiritPower_Name">灵魂</string>
+    <string key="swdm::StoutPower_Name">坚韧</string>
+    <string key="swdm::SwampPower_Name">沼泽</string>
+    <string key="swdm::UnderworldPower_Name">地下世界</string>
+    <string key="swdm::WealthyPower_Name">富豪</string>
+
+    <string key="swdm::GoblinRace_Name">哥布林</string>
+    <string key="swdm::KoboldRace_Name">狗头人</string>
+    <string key="swdm::GypsyRace_Name">游牧民</string>
+    <string key="swdm::PriestessRace_Name">女祭司</string>
+    <string key="swdm::WhiteLadyRace_Name">白衣女士</string>
+    <string key="swdm::BarbarianRace_Name">野蛮人</string>
+    <string key="swdm::HomunculiRace_Name">人造人</string>
+    <string key="swdm::LeprechaunRace_Name">小矮妖</string>
+    <string key="swdm::PixyRace_Name">小精灵</string>
+    <string key="swdm::PygmyRace_Name">巫医</string>
+    <string key="swdm::CursedPower_Name">诅咒</string>
+    <string key="swdm::HordesOfPower_Name">成群</string>
+    <string key="swdm::MaraudingPower_Name">劫掠</string>
+    <string key="swdm::RansackingPower_Name">洗劫</string>
+    <string key="swdm::WerePower_Name">变身</string>
+    <string key="swdm::HistorianPower_Name">历史学家</string>
+    <string key="swdm::PeaceLovingPower_Name">和平主义</string>
+    <string key="swdm::BarricadePower_Name">路障</string>
+    <string key="swdm::CatapultPower_Name">投石机</string>
+    <string key="swdm::CorruptPower_Name">腐化</string>
+    <string key="swdm::ImperialPower_Name">帝国</string>
+    <string key="swdm::MercenaryPower_Name">雇佣兵</string>
+
+    <!-- KS Pack -->
+    <string key="swdm::IgorRace_Name">伊戈尔</string>
+    <string key="swdm::ShrubmenRace_Name">灌木人</string>
+    <string key="swdm::FaunRace_Name">羊人</string>
+    <string key="swdm::FireballPower_Name">火球</string>
+    <string key="swdm::AquaticPower_Name">水生</string>
+    <string key="swdm::BehemothPower_Name">巨兽</string>
+
+    <!-- SpiderWeb Pack -->
+    <string key="swdm::LavaPower_Name">熔岩</string>
+    <string key="swdm::SlingmenRace_Name">投石兵</string>
+    <string key="swdm::IceWitchesRace_Name">冰雪女巫</string>
+    <string key="swdm::SoulTouchPower_Name">灵魂触摸</string>
+    <string key="swdm::CopycatPower_Name">模仿者</string>
+    <string key="swdm::SkagsRace_Name">斯卡斯</string>
+
+    <!-- Expansions -->
+    <string key="ExpansionTitle_Cursed">诅咒！</string>
+    <string key="ExpansionTitle_GrandDames">贵妇团</string>
+    <string key="ExpansionTitle_BeNotAfraid">不要害怕...</string>
+    <string key="ExpansionTitle_RoyalBonus">皇家奖励</string>
+    <string key="ExpansionTitle_SpiderWeb">蛛网</string>
+
+    <!-- Quick Online Setup Game Screen -->
+    <string key="QuickOnlineGSC_NbPlayers">玩家数量</string>
+    <string key="QuickOnlineGSC_EstimatedTimeToWaitLabel">预计等待时间：</string>
+
+    <!-- Resume games -->
+    <string key="ResumeGame_Title">继续游戏</string>
+    <string key="ResumeGame_Message">你上次的游戏没有完成。
+是否继续？</string>
+    <string key="ResumeGame_ResumeButton">继续</string>
+
+    <!-- Local Play -->
+    <string key="LocalPlayWaitingPanel_Message">请等待其他玩家加入游戏</string>
+
+    <string key="JoinableGameCell_LabelFormat">%s 的游戏</string>
+
+    <string key="LocalGameError_Title">网络错误</string>
+    <string key="LocalGameError_MessageFormat">发生错误(%d, %s)</string>
+
+    <!-- In game errors -->
+    <string key="GameError_Title">错误</string>
+    <string key="GameError_MessageFormat">刚刚发生错误：%s</string>
+    <string key="GameError_QuitButton">退出</string>
+    <string key="GameAborted_Title">游戏中止</string>
+    <string key="GameAborted_MessageFormat">%s 中止了这场游戏。</string>
+
+    <!-- No internet connection message -->
+    <string key="NoInternetConnection_Title">无网络连接</string>
+    <string key="NoInternetConnection_Message">需要网络连接。</string>
+
+    <!-- Settings Screen -->
+    <string key="SettingsScreen_LoginButton">登录</string>
+
+    <string key="SettingsScreen_LogoutButtonFormat">登出
+%s</string>
+
+    <string key="SettingsScreen_AutoRedeploySwitchLabel">在线好友对战时
+自动重新部署</string>
+
+    <!-- Resume online games -->
+    <string key="Withdraw_Label">退出</string>
+    <string key="OnlinePlay_NoOpenGamesMessage">没有可继续的开放游戏。</string>
+    <string key="WithdrawGame_Title">退出游戏</string>
+    <string key="WithdrawGame_Message">你确定要放弃这场游戏吗？</string>
+    <string key="TimeLeftBeforeTimeoutFormat">剩余 %s</string>
+
+    <!-- Async Game Push Notification Handler-->
+    <string key="AsyncGame_YourTurn_Title">轮到你了</string>
+    <string key="AsyncGame_YourTurn_Message">现在轮到你了！
+你想现在进行这场在线游戏吗？</string>
+    <string key="AsyncGame_YourTurnInOtherGame_Message">另一场在线游戏轮到你了。
+你想现在切换到那场游戏吗？</string>
+
+    <string key="AsyncGame_YourTurn_PlayButton">开始</string>
+
+    <string key="AsyncGame_YourTurnInvite_Title">邀请</string>
+    <string key="AsyncGame_YourTurnInvite_Message">你被邀请参加这场在线游戏。
+你想现在开始吗？</string>
+    <string key="AsyncGame_YourTurnInviteInOtherGame_Message">你被邀请参加另一场在线游戏。
+你想现在切换到那场游戏吗？</string>
+
+    <string key="AsyncGame_GameOver_Title">游戏结束</string>
+    <string key="AsyncGame_GameOver_Message">你的一场在线游戏结束了。</string>
+
+    <!-- Play Online with Buddies -->
+    <string key="OnlinePlay_NoBuddiesMessage">你没有好友。</string>
+    <string key="OnlinePlay_ManageMyBuddiesButton">管理好友</string>
+    <string key="OnlinePlay_PlayOnlineButton">在线游戏</string>
+
+    <string key="OnlinePlay_InviteButton">邀请</string>
+    <string key="OnlinePlay_UninviteButton">取消邀请</string>
+    <string key="OnlinePlay_RemoveBuddyButton">移除</string>
+
+    <string key="LoginNotFound_Title">未找到玩家</string>
+    <string key="LoginNotFound_MessageFormat">在玩家列表中找不到用户 %s。</string>
+
+    <string key="OnlinePlay_BuddyAlreadyAdded_Title">好友已添加</string>
+    <string key="OnlinePlay_BuddyAlreadyAdded_MessageFormat">%s 已在你的好友列表中。</string>
+
+    <string key="OnlinePlay_AddBuddyButton">添加</string>
+    <string key="OnlinePlay_FindDowPlayerExplanation">输入玩家登录名查找玩家。</string>
+    <string key="OnlinePlay_BuddyAdded_Title">好友已添加。</string>
+    <string key="OnlinePlay_BuddyAdded_MessageFormat">玩家 %s 已成功添加。</string>
+
+    <string key="OnlinePlay_NoRecentOpponentsMessage">你没有近期对手。</string>
+
+    <string key="OnlinePlay_GameCenterCancelled">此游戏的 Game Center 已停用。
+如需激活，请在 Game Center 应用中登录。</string>
+    <string key="OnlinePlay_GameCenterError">Game Center 发生错误。
+请稍后重试。</string>
+    <string key="OnlinePlay_NoGCFriendsMessage">你的 Game Center 好友列表为空。</string>
+
+    <!-- Duration Formatter -->
+    <string key="NbHours_Format">%d 小时</string>
+    <string key="NbMinutes_Format">%d 分钟</string>
+    <string key="NbSeconds_Format">%d 秒</string>
+
+    <!-- High score -->
+    <string key="SubmitHighscoreMessageBox_Title">新纪录！</string>
+    <string key="SubmitHighscoreMessageBox_MessageFormat">你刚刚以 %d 分创下新纪录。
+是否将其记录到排行榜？</string>
+    <string key="SubmitHighscoreMessageBox_PlayerNameLabel">你的名字：</string>
+
+    <string key="LeaderboardScreen_EmptyLeaderboard">该排行榜为空。</string>
+
+    <string key="ScoreSubmittedOnline_Title">分数已在线提交</string>
+    <string key="ScoreSubmittedOnline_MessageFormat">%s，你以 %d 分提升了排名（第 %d 名）</string>
+    <string key="ScoreSubmittedOnline_SeeButton">查看排名</string>
+
+    <!-- Go to Web browser -->
+    <string key="ViewProduct_Title">离开小小世界查看商品</string>
+    <string key="ViewProduct_MessageFormat">你将被重定向到浏览器查看 %s 的信息。
+是否离开应用？</string>
+
+    <string key="OnlinePlay_GCFriendNotBoundToDow_Title">好友未关联 DoW 账号</string>
+    <string key="OnlinePlay_GCFriendNotBoundToDow_MessageFormat">%s 未关联 Days of Wonder 账号。</string>
+
+    <string key="LeaveGameMessageBox_Message">你想暂时离开这场游戏吗？
+别担心，游戏会被保存。</string>
+
+    <string key="LeaderboardPeriod_Day">日</string>
+    <string key="LeaderboardPeriod_Week">周</string>
+    <string key="LeaderboardPeriod_Ever">总</string>
+
+    <string key="NotApplicable">不适用</string>
+
+    <string key="RecentOpponents_Label">近期对手</string>
+    <string key="FindDOWPlayers_Label">查找</string>
+    <string key="GameCenter_Label">Game Center</string>
+
+    <string key="DefaultPlayerNameFormat">玩家 %d</string>
+    <string key="BotName_Blue">铁皮机器人</string>
+    <string key="BotName_Red">B4P-b0t</string>
+    <string key="BotName_Yellow">阿克塔机器人</string>
+    <string key="BotName_Green">灌木机器人</string>
+    <string key="BotName_Purple">椰子机器人</string>
+
+    <string key="LeaderboardPeriod_Provisional">临时</string>
+    <string key="LeaderboardPeriod_Established">正式</string>
+
+    <string key="ShopScreen_Speech">嘿，看看这些来自 Days of Wonder 的精美桌游！</string>
+
+    <string key="SkipButton_Label">跳过</string>
+
+    <string key="PickComboControllerCheck_Title">查看可用的种族与特殊能力组合</string>
+    <string key="PickComboControllerOtherOpponent_TitleFormat">%s 正在选择新组合</string>
+
+    <!-- SSO -->
+    <string key="SettingsScreen_LoginSettingsButton">登录设置</string>
+
+    <!-- Play Online with Buddies -->
+
+    <string key="MessageBox_InviteButton">邀请</string>
+    <string key="MessageBox_InviteTitle">小小世界</string>
+    <string key="MessageBox_InviteMessage">我邀请你玩小小世界！要和我一起玩，你需要购买应用并在线登录。</string>
+
+    <!-- Buddy Management -->
+    <string key="OnlinePlay_CannotAddMyselfAsBuddy_Title">操作被拒绝</string>
+    <string key="OnlinePlay_CannotAddMyselfAsBuddy_Message">你不能将自己添加为好友！</string>
+
+    <string key="OnlinePlay_AdvancedSettingsButton">高级设置</string>
+    <string key="OnlinePlay_BuddiesListButton">好友列表</string>
+
+    <string key="OnlinePlay_AutoRedeploySwitchLabel">自动重新部署</string>
+    <string key="OnlinePlay_RankedSwitchLabel">排名游戏</string>
+    <string key="OnlinePlay_GameTurnTimeoutLabel">每位玩家最长用时</string>
+
+    <string key="OnlinePlay_CannotResumeTitle">无法继续游戏</string>
+    <string key="OnlinePlay_CannotResumeMessage">抱歉，这场在线游戏已不可用</string>
+    <string key="OnlinePlay_CannotResumeMessageWithErrorFormat">你无法继续此游戏，原因：
+%s</string>
+
+    <!-- Tutorial video -->
+    <string key="TutorialVideoID">NoFJdtZ4BIg</string>
+
+    <!-- Berserk -->
+    <string key="BerserkDeclineOrRoll_Message">作为狂暴种族，你现在可以掷骰进行征服或进入衰落。
+你想怎么做？</string>
+
+    <string key="OnlinePlay_CheckVersion_Title">需要更新应用</string>
+    <string key="OnlinePlay_CheckVersion_MessageFormat">你的应用需要更新才能在线游戏（你的版本：%s，需要版本或更高：%s）</string>
+
+    <!-- Local Play -->
+    <string key="LocalPlay_NoOpenGamesMessage">你的局域网中没有开放游戏。
+
+请创建一个或等待朋友创建新游戏后加入。
+
+同时请确保你已连接到 WiFi 网络。</string>
+
+    <!-- Chat -->
+    <string key="SendChatButton">发送</string>
+
+    <string key="Buy">购买</string>
+
+    <!-- Tooltips -->
+    <subPool name="tooltips.xml"/>
+
+    <string key="AddBuddy_Title">添加好友</string>
+    <string key="AddBuddy_MessageFormat">你想将 %s 添加为好友吗？</string>
+
+    <string key="OnlineArena_PrivateGameSwitchLabel">私人游戏</string>
+    <string key="OnlineArena_SingleSessionButtonLabel">单场游戏</string>
+    <string key="OnlineArena_TurnBasedButtonLabel">多场游戏</string>
+    <string key="OnlineArena_UndefinedCustomTimeout">?
+自定义</string>
+    <string key="LeaveGame_Label">离开游戏</string>
+    <string key="PendingPlayer_Label">等待中</string>
+    <string key="OpenGame_Label">开放游戏</string>
+    <string key="NoOpenGames_Message">没有开放游戏。
+你可以前往创建面板创建一个新游戏。</string>
+    <string key="DefaultGameNameFormat">%s 的游戏</string>
+
+    <string key="DefinePassword_Title">设置游戏密码</string>
+    <string key="DefinePassword_Message">请为你的游戏输入密码。</string>
+
+    <string key="EnterGamePassword_Title">私人游戏</string>
+    <string key="EnterGamePassword_Message">请输入此游戏的密码。</string>
+
+    <string key="CustomTimeout_Title">自定义时间设置</string>
+
+    <!-- Short Duration Formatter -->
+    <string key="NbDays_Format">%d 天</string>
+    <string key="NbDays_ShortFormat">%d 天</string>
+    <string key="NbHours_ShortFormat">%d 时</string>
+    <string key="NbMinutes_ShortFormat">%d 分</string>
+    <string key="NbSeconds_ShortFormat">%d 秒</string>
+
+    <!-- Errors -->
+    <subPool name="errorMessages.xml"/>
+
+    <!-- Chat -->
+    <string key="ChatProfanity_OtherPlayer_Format">%s 因使用脏话被静音几分钟。</string>
+    <string key="ChatProfanity_You">你触发了脏话过滤器——你将被静音几分钟。</string>
+
+    <!-- Lobby -->
+    <string key="LeaveSingleSessionGameMessageBox_Title">放弃单场游戏</string>
+    <string key="LeaveSingleSessionGameMessageBox_Message">你想放弃这场单场游戏吗？你将被机器人取代。</string>
+
+    <!-- Resume online games -->
+    <string key="DeclineInvitation_Button">拒绝邀请</string>
+    <string key="InvitationPending_Label">邀请待处理</string>
+
+    <string key="Resume_SingleSessionGame_Title">进行中的单场游戏</string>
+    <string key="Resume_SingleSessionGame_Message">你离开的一场单场游戏仍在进行中。是否继续？</string>
+
+    <!-- Invitation -->
+    <string key="InvitationDialog_Title">在线游戏邀请</string>
+    <string key="InvitationDialog_Message">%s 向你发起一场 %d 人在线游戏挑战。</string>
+    <string key="InvitationDialog_Decline_Button">拒绝邀请</string>
+    <string key="InvitationDialog_See_Button">查看邀请</string>
+    <string key="InvitationDialog_Accept_Button">接受邀请</string>
+
+    <!-- Play Screen -->
+    <string key="PlayScreen_InviteBuddies_Button">邀请好友</string>
+
+    <!-- Stats -->
+    <string key="PlayerStats_VictimLabel">是你最喜欢的对手</string>
+    <string key="ComboStats_MinLabel">最低</string>
+    <string key="ComboStats_MaxLabel">最高</string>
+
+    <!-- Invite Buddies -->
+    <string key="OnlinePlay_FirstPlayerLabel">先手玩家</string>
+
+    <!-- Player Hotswap -->
+    <string key="PlayerHotswap_BecameRobot_Title">玩家离开游戏</string>
+    <string key="PlayerHotswap_BecameRobot_MessageFormat">%s 刚刚离开游戏。
+他现在被机器人取代</string>
+    <string key="PlayerHotswap_BecameRobotBecauseTimeout_MessageFormat">%s 超时，已被机器人取代。</string>
+
+    <string key="PlayerHotswap_CameBack_Title">玩家回归</string>
+    <string key="PlayerHotswap_CameBack_MessageFormat">%s 刚刚回到游戏</string>
+
+    <string key="GameTimeOut_Title">超时</string>
+    <string key="GameTimeOut_MessageForLocalPlayerTimeout">你超时了。
+你将被机器人取代且无法恢复。</string>
+    <string key="GameTimeOut_MessageForLocalPlayerTimeout_GameAborted">你超时了。
+游戏已中止。</string>
+
+    <string key="OnlineArena_CustomTimeoutFormat">自定义：
+%s</string>
+
+    <string key="NextActionLabel_MayRollDie">掷骰</string>
+
+    <!-- Resume online games -->
+    <string key="CancelInvitation_Button">取消邀请</string>
+    <string key="InvitationFromNotification_Message">你被挑战参加一场在线游戏。</string>
+
+    <string key="LoginButton">登录</string>
+
+
+    <string key="OnlineServerDidNotRespond_Title">在线错误</string>
+    <string key="OnlineServerDidNotRespond_Message">在线服务器无响应。请检查你的网络连接。</string>
+    <string key="Error_Code">错误代码：</string>
+
+
+    <string key="WaitForServerResponse_Title">服务器连接</string>
+    <string key="WaitForServerResponse_Message">正在向在线服务器发送数据…</string>
+
+    <string key="CantInviteBuddyWithoutApp_MessageFormat">%s 似乎还没有小小世界，因此无法被邀请游玩。</string>
+    <string key="CantInviteBuddyWithoutApp_Title">无法邀请玩家</string>    
+
+    <!-- Localization kit -->
+    <string key="DisconnectedControllerTitleId">这里信号不好</string>
+    <string key="DisconnectedControllerConnectId">连接一个控制器以继续</string>
+
+    <string key="RateApp_Title">为应用评分！</string>
+    <string key="RateApp_Message">如果你喜欢这个应用，介意花点时间为它评分吗？
+不会超过一分钟。
+
+感谢你的支持！</string>
+    <string key="RateApp_Ok">立即评分</string>
+    <string key="RateApp_No">不用了，谢谢</string>
+    <string key="RateApp_Later">稍后</string>
+
+    <string key="MessageBox_TryAgain">重试</string>
+
+
+    <string key="NextActionLabel_BeforeEndConquerPhase">特殊征服</string>
+</strings>

@@ -1,0 +1,14 @@
+
+// Push notifications localization
+"YOUR_TURN_ACTION" = "开始游戏";
+"YOUR_TURN" = "现在轮到你了！";
+"YOUR_TURN_ROBOT" = "现在轮到你了！";
+
+"YT_INVITE_ACTION" = "开始游戏";
+"YOUR_TURN_INVITE" = "你被邀请来玩！";
+
+"INVITATION_ACTION" = "开始游戏";
+"CONFIRM_INVITATION" = "你被邀请来玩！";
+
+"GAME_OVER_ACTION" = "游戏结束";
+"GAME_OVER" = "一场游戏刚刚结束";

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<strings>
+    
+    <!-- Main Menu -->
+    <string key="Tooltip_CreditsButton">鸣谢</string>
+    <string key="Tooltip_RulesButton">规则</string>
+    <string key="Tooltip_ShopButton">商店</string>
+    <string key="Tooltip_LeaderboardsButton">排行榜</string>
+    <string key="Tooltip_SettingsButton">设置</string>
+    
+    <!-- Compendium -->
+    <string key="Tooltip_GameRulesTab">游戏规则</string>
+    <string key="Tooltip_RegionsTab">地区</string>
+    <string key="Tooltip_RacesTab">种族</string>
+    <string key="Tooltip_PowersTab">特殊能力</string>
+    <string key="Tooltip_UserGuideTab">用户指南</string>
+    
+    <!-- Leaderboards -->
+    <string key="Tooltip_SoloLocalButton">本地排名</string>
+    <string key="Tooltip_SoloWorldwideButton">全球排名</string>
+    <string key="Tooltip_KarmaScoreIcons">因果值与排名分数</string>
+    <string key="Tooltip_OnlineProvisionalButton">临时排名</string>
+    <string key="Tooltip_OnlineEstablishedButton">正式排名</string>
+    
+    <!-- Settings -->
+    <string key="Tooltip_ChangeAvatarColor">切换颜色</string>
+    
+    <!-- Play Menu -->
+    <string key="Tooltip_SoloButton">单人对战 AI</string>
+    <string key="Tooltip_FaceToFaceButton">与朋友对战</string>
+    <string key="Tooltip_PassnPlayButton">在同一台电脑上与朋友一起玩</string>
+    <string key="Tooltip_GamesInProgressButton">你未完成的游戏</string>
+    <string key="Tooltip_OnlineQuickPlayButton">开始快速多人游戏</string>
+    <string key="Tooltip_OnlineWithBuddiesButton">开始多人游戏并邀请朋友一起玩</string>
+    <string key="Tooltip_LocalGameButton">进行局域网游戏</string>
+    
+    <!-- Solo Game Setup -->
+    <string key="Tooltip_SelectFirstPlayerButton">先手玩家</string>
+    <string key="Tooltip_RandomFirstPlayerButton">随机先手玩家</string>
+    <string key="Tooltip_RestorePurchasesButton">点击此处恢复已购买内容</string>
+    
+    <!-- Online Quick Play Game Setup -->
+    <string key="Tooltip_RabbitSwitch">高级设置</string>
+    
+    <!-- Online with Buddies Game Setup -->
+    <string key="Tooltip_SWFilter">仅显示拥有小小世界的朋友</string>
+    <string key="Tooltip_InviteBuddiesAddButton">将此玩家添加到好友列表</string>
+    <string key="Tooltip_InviteBuddiesRemoveButton">从好友列表中移除此玩家</string>
+    <string key="Tooltip_AutomaticRedeploySwitch">如果你想在损失后手动重新部署代币，请关闭此选项。</string>
+    <string key="Tooltip_RankedGameSwitch">如果你想进行非排名游戏，请关闭此选项。</string>
+    <string key="Tooltip_GameTurnTimeOutSegment">设置每个回合的最大时长。超过此限制的玩家将被踢出游戏。</string>
+    
+    <!-- In Game -->
+    <string key="Tooltip_ComboPickerGoToCompendiumButton">前往规则书</string>
+    <string key="Tooltip_BackMenuQuitButton">离开当前游戏</string>
+    <string key="Tooltip_BackMenuRulesButton">游戏规则</string>
+    <string key="Tooltip_BackMenuSettingsButton">设置</string>
+    <string key="Tooltip_DeclineButton">让当前活跃种族进入衰落</string>
+    <string key="Tooltip_OpponentBannerButton">显示该玩家的组合</string>
+    <string key="Tooltip_ActiveCombos">活跃组合</string>
+    <string key="Tooltip_InDeclineCombos">衰落组合</string>
+    <string key="Tooltip_StackOfTokensInYourHand">你可用的代币</string>
+    <string key="Tooltip_PlayerAvatarButton">高亮该玩家的征服区域</string>
+    <string key="Tooltip_MyScoreCoinButton">你当前的分数</string>
+    <string key="Tooltip_NextAction_Redeploy">重新部署代币</string>
+    <string key="Tooltip_NextAction_ActivateNextCombo">使用你的活跃种族</string>
+    <string key="Tooltip_NextAction_FinishRedeployment">完成当前操作</string>
+    <string key="Tooltip_NextAction_FinishTurn">完成当前操作</string>
+    <string key="Tooltip_NextAction_MaraudingPhase">进行第二次征服阶段</string>
+    
+    <!-- Online Arena Screen -->
+    <string key="Tooltip_OnlineArena_Karma">因果等级</string>
+    <string key="Tooltip_OnlineArena_RankingScore">排名分数</string>
+    <string key="Tooltip_OnlineArena_NbGames">已进行的排名游戏数量</string>
+    <string key="Tooltip_OnlineArena_Language">玩家语言</string>
+    <string key="Tooltip_OnlineArena_AvailablePlayers">可用玩家列表</string>
+    <string key="Tooltip_OnlineArena_Search">搜索</string>
+    <string key="Tooltip_OnlineArena_ChatHistory">聊天记录</string>
+    <string key="Tooltip_OnlineArena_ChatBox">聊天框 - 在此输入消息</string>
+    
+    <string key="Tooltip_OnlineArena_SingleSessionButton">单场游戏必须连续进行。断开连接的玩家将被机器人取代。</string>
+    <string key="Tooltip_OnlineArena_MultiSessionButton">多场游戏可以暂停，并且可以同时进行多场。</string>
+    
+    <string key="Tooltip_OnlineArena_PresetPlayerClock">预设玩家时钟</string>
+    <string key="Tooltip_OnlineArena_CustomPlayerClock">自定义玩家时钟。双击设置你自己的值。</string>
+
+    <string key="Tooltip_OnlineArena_NumPlayers">玩家数量</string>
+    <string key="Tooltip_OnlineArena_StartingPlayer">起始玩家</string>
+    <string key="Tooltip_OnlineArena_MinKarma">最低因果等级</string>
+    <string key="Tooltip_OnlineArena_RankingToggle">排名开关</string>
+    <string key="Tooltip_OnlineArena_GameName">你的游戏名称</string>
+    <string key="Tooltip_OnlineArena_PrivateGameButton">私人游戏需要密码</string>
+    
+    <string key="Tooltip_OnlineArena_SingleSessionGame">单场游戏必须连续进行。断开连接的玩家将被机器人取代。</string>
+    <string key="Tooltip_OnlineArena_MultiSessionGame">多场游戏可以暂停，并且可以同时进行多场。</string>
+    <string key="Tooltip_OnlineArena_PlayerClock">玩家时钟：分配给每位玩家完成整场游戏的时间。</string>
+    <string key="Tooltip_OnlineArena_Expansions">本场游戏使用的扩展</string>
+    <string key="Tooltip_OnlineArena_GameRanked">此游戏计入排名</string>
+    <string key="Tooltip_OnlineArena_GameNotRanked">此游戏不计入排名</string>
+    <string key="Tooltip_OnlineArena_AutoRedeployment">重新部署将由 AI 自动管理。</string>
+    <string key="Tooltip_OnlineArena_PrivateGame">此游戏为私人游戏，你需要输入密码才能加入。</string>
+
+    <string key="Tooltip_NextAction_MayRollDie">掷骰获得攻击加成</string>
+
+    <string key="Tooltip_NextAction_BeforeEndConquerPhase">使用特殊能力征服</string>
+
+</strings>

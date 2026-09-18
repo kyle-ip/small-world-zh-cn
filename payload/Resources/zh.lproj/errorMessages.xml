@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<strings>
+    
+    <string key="SWError_CannotResumeGame">无法继续游戏</string>
+    <string key="SWError_ClientDisconnected">客户端断开连接</string>
+    <string key="SWError_UnknownAuthError">未知认证错误</string>
+    <string key="SWError_AccessDenied">访问被拒绝</string>
+    <string key="SWError_ServerFull">服务器已满</string>
+    <string key="SWError_MaintenanceMode">维护模式</string>
+    <string key="SWError_NeedAuthentication">需要认证</string>
+    <string key="SWError_UnknownGameType">未知游戏类型</string>
+    <string key="SWError_UnknownDevice">未知设备</string>
+    <string key="SWError_ServerDisconnected">服务器断开连接</string>
+    <string key="SWError_BadVersion">版本错误</string>
+    <string key="SWError_GameNotStarted">游戏未开始</string>
+    <string key="SWError_WrongGame">错误的游戏</string>
+    <string key="SWError_NoLocalPlayer">无本地玩家</string>
+    <string key="SWError_UnknownError">未知错误</string>
+    <string key="SWError_NotYourTurn">不是你的回合</string>
+    <string key="SWError_UnknownPlayer">未知玩家</string>
+    <string key="SWError_UnknownGame">未知游戏</string>
+    <string key="SWError_TooManyOffers">提议过多</string>
+    <string key="SWError_UnknownDeviceToken">未知设备令牌</string>
+    <string key="SWError_ServerError">服务器错误</string>
+    <string key="SWError_NotEnoughKarma">因果值不足</string>
+    <string key="SWError_TooManyGames">游戏过多</string>
+    <string key="SWError_GameFull">游戏已满</string>
+    <string key="SWError_Ignored">已忽略</string>
+    <string key="SWError_PasswordMismatch">密码不匹配</string>
+    <string key="SWError_DuplicatePlayer">重复玩家</string>
+        
+    <string key="SWError_SaveIncompatible">旧版不兼容的备份</string>
+
+</strings>

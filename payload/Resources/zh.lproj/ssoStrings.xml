@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<strings>
+
+    <string key="ConnectionError_Title">连接错误</string>
+
+    <!-- SSO Controller-->
+    <string key="SSOController_Title">认证</string>
+
+    <!-- Sign in In Progress Panel -->
+    <string key="SigninInProgressPanel_LabelFormat">正在认证… %s</string>
+
+    <!-- SSO -->
+    <string key="MessageBox_SkipButton">跳过</string>
+    <string key="MessageBox_BackButton">返回</string>
+    
+    <string key="AlreadyPlayedPanel_Title">以前玩过在线版吗？</string>
+    <string key="AlreadyPlayedPanel_Message">你已经有
+Days of Wonder 在线账号吗？</string>
+    <string key="AlreadyPlayedPanel_SubMessage">我们将帮你找到账号</string>
+    
+    <string key="LoginPanel_Title">登录</string>
+    <string key="LoginPanel_Message">请输入你的登录名或
+电子邮件地址</string>
+    <string key="LoginPanel_LoginEmailInvalid_Message">无效的登录名或电子邮件</string>
+    <string key="LoginPanel_Placeholder">登录名或电子邮件</string>
+
+    <string key="PasswordPanel_Title">密码</string>
+    <string key="PasswordPanel_Message">我们找到了你的账号。
+让我们登录吧。</string>
+    <string key="PasswordPanel_PasswordInvalid_Message">无效的密码</string>
+    <string key="PasswordPanel_Placeholder">密码</string>
+    <string key="PasswordPanel_Forgot_Button">忘记密码？</string>
+    <string key="PasswordPanel_EmailSent_Message">我们已向你发送电子邮件。请按照说明操作</string>
+    
+    <string key="LinkPanel_Title">账号已关联</string>
+    
+    <string key="WelcomePanel_Title">欢迎来到 Days of Wonder 在线！</string>
+    <string key="WelcomePanel_Placeholder">电子邮件</string>
+    <string key="WelcomePanel_SubMessage">我们将对你的电子邮件保密。</string>
+    
+    <string key="AskEmailPanel_Title">接收密码</string>
+    <string key="AskEmailPanel_Placeholder">在此输入你的电子邮件地址</string>
+    <string key="AskEmailPanel_SubMessage">我们将对你的电子邮件保密。</string>
+    <string key="AskEmailPanel_SpamBox">接收 Days of Wonder 新闻</string>
+    
+    <string key="AccountsShouldMergePanel_Title">合并你的账号</string>
+    <string key="AccountsShouldMergePanel_Message">你已经有另一个使用该电子邮件的账号。我们强烈建议你合并账号。为此，请前往 Days of Wonder 网站的账号详情，点击"合并账号"。</string>
+    
+    <string key="FoundEmailPanel_Title">输入密码</string>
+    <string key="FoundEmailPanel_Message">我们找到了你的账号。我们已向你发送电子邮件。请按照其中的说明操作，然后在下方输入密码：</string>
+    <string key="FoundEmailPanel_Placeholder">密码</string>
+    
+    <string key="PasswordSentPanel_Title">密码已发送</string>
+    <string key="PasswordSentPanel_Message">包含登录名和密码的电子邮件已发送到你的地址。</string>
+    
+    <string key="AccountCreatedPanel_Title">账号已创建</string>
+    <string key="AccountCreatedPanel_Message">激活电子邮件已发送到你的地址，请务必查收。未激活的账号将在 7 天后删除。</string>
+
+    <string key="LinkPanel_Message">你的账号：Days of Wonder%s 现已关联。</string>
+    <string key="LinkPanel_Sub_Message">、%s</string>
+
+    <string key="WelcomePanel_EmailMessage">输入你的电子邮件地址。</string>
+    <string key="WelcomePanel_EmailInvalid_Message">无效的电子邮件</string>
+    <string key="WelcomePanel_PasswordMessage">输入你的密码。</string>
+
+    <string key="AskEmailPanel_Message">你的 Days of Wonder 在线账号没有有效的电子邮件。输入你的电子邮件地址，你将收到密码。</string>
+    <string key="AskEmailPanel_EmailInvalid_Message">无效的电子邮件</string>
+
+    <string key="LoginSettingsPanel_Title">登录账号</string>
+    <string key="LoginSettingsPanel_LogoutButton">登出</string>
+    <string key="LoginSettingsPanel_GetMyPasswordButton">获取密码</string>
+    <string key="LoginSettingsPanel_EditMyProfileButton">编辑个人资料</string>
+    <string key="LoginSettingsPanel_UpdateMyEmailButton">更新电子邮件</string>
+    <string key="LoginSettingsPanel_SupportButton">支持</string>
+    <string key="LoginSettingsPanel_Leave_Title">离开小小世界</string>
+    <string key="LoginSettingsPanel_EditAccount_Message">你将被重定向到浏览器查看账号。
+是否离开应用？</string>
+    <string key="LoginSettingsPanel_Support_Message">你将被重定向到浏览器。
+是否离开应用？</string>
+    <string key="LoginSettingsPanel_LinkButton">设置自动登录</string>
+    <string key="LoginSettingsPanel_RepairButton">启用自动登录</string>
+    <string key="LoginSettingsPanel_SettingsButton">打开应用设置</string>
+    <string key="LoginSettingsPanel_LoginButton">登录</string>
+    <string key="LoginSettingsPanel_LinkErrorTitle">此账号已关联</string>
+    <string key="LoginSettingsPanel_LinkErrorMessage">此 %s 账号已关联到另一个 Days of Wonder 账号：%s</string>
+    
+    <!-- not use --><string key="LoginSettingsPanel_RepairSettingsMessage">打开应用设置并允许通讯录权限以启用账号关联自动登录。</string>
+    <!-- not use --><string key="LoginSettingsPanel_RepairRationaleMessage">允许访问你的通讯录以启用账号关联自动登录。</string>
+    <!-- not use --><string key="LoginSettingsPanel_LinkSettingsMessage">打开应用设置并允许通讯录权限以设置账号关联自动登录。</string>
+    <!-- not use --><string key="LoginSettingsPanel_LinkRationaleMessage">允许访问你的通讯录以设置账号关联自动登录。</string>
+
+    <string key="PlatformUserIdChooserPanel_Title">选择你的账号</string>
+
+    <string key="LoginError_Title">错误</string>
+    <string key="LoginError_MessageFormat">刚刚发生错误：%s</string>
+
+    <string key="EditLoginPanel_Placeholder">登录名或电子邮件</string>
+    <string key="EditLoginPanel_Message">请输入你的登录名</string>
+    <string key="EditLoginPanel_LoginExisting_Message">此登录名已存在</string>
+    <string key="EditLoginPanel_LoginInvalid_Message">无效：[A-Z][a-z][0-9]-_</string>
+    
+    <string key="ValidatedAccountMessageBoxController_Title">请先确认你的账号</string>
+    <string key="ValidatedAccountMessageBoxController_Message">检查你的邮箱以获取账号确认邮件并按照说明操作。
+完成后，点击"重试"按钮。</string>
+    <string key="ValidatedAccountMessageBoxController_HelpMessage1">找不到邮件？检查垃圾邮件文件夹。</string>
+    <string key="ValidatedAccountMessageBoxController_HelpMessage2">还是没有？我们已发送到：</string>
+    <string key="ValidatedAccountMessageBoxController_HelpMessage3">使用"重新发送"按钮再次接收。
+使用"更改电子邮件"按钮设置新的电子邮件地址。</string>
+    <string key="ValidatedAccountMessageBoxController_TryAgain">重试</string>
+    <string key="ValidatedAccountMessageBoxController_CorrectEmail">更改电子邮件</string>
+    <string key="ValidatedAccountMessageBoxController_SendAgain">重新发送</string>
+    <string key="ValidatedAccountMessageBoxController_Help">帮助</string>
+    <string key="ValidatedAccountMessageBoxController_ChangeEmailTitle">更改你的电子邮件</string>
+    <string key="ValidatedAccountMessageBoxController_ChangeEmailMessage">请输入新的电子邮件以验证账号：</string>
+    <string key="ValidatedAccountMessageBoxController_ChangeEmailIdentical">电子邮件相同，未做更改</string>
+    <string key="ValidatedAccountMessageBoxController_ChangeEmailInvalid">无效的电子邮件，未做更改</string>
+    <string key="ValidatedAccountMessageBoxController_ChangeEmailAlreadyTaken">电子邮件已被占用，未做更改</string>
+    <string key="ValidatedAccountMessageBoxController_Validate">验证</string>
+    <string key="ValidatedAccountMessageBoxController_Cancel">取消</string>
+    <string key="PartnerLabelSteam">Steam</string>
+    <string key="PartnerLabelAmazon">Amazon</string>
+    <string key="PartnerLabelGoogle">Google</string>
+    <string key="PartnerLabelGameCenter">Game Center</string>
+    <string key="PartnerLabelPlayStationNetwork">PlayStation™Network 账号</string>
+
+    <string key="AskEmailPanel_PrivacyBox">接受隐私政策</string>
+
+    <string key="LoginSettingsPanel_UnlinkButton">取消关联账号</string>
+    
+</strings>
