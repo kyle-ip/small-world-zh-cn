@@ -1,31 +1,49 @@
-# Small World — Unofficial Simplified Chinese Language Pack
+# Small World 2 — Simplified Chinese Pack
 
-![](./assets/Default-Landscape.png)
+[![Release](https://img.shields.io/github/v/release/kyle-ip/small-world-zh-cn?label=release)](https://github.com/kyle-ip/small-world-zh-cn/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](https://github.com/kyle-ip/small-world-zh-cn/releases)
+[![Status](https://img.shields.io/badge/status-unofficial-orange)](#disclaimer)
 
-Fan / learning project. **Not affiliated with Days of Wonder, Asmodee, or Valve.**
+Unofficial **Simplified Chinese** language pack for the Steam version of *Small World 2*.
 
-## For players — one EXE
+![Launcher / landscape art](./assets/Default-Landscape.png)
 
-Distribute a single file:
+A single Windows EXE embeds strings, baked UI art, rulebook HTML, and CJK fonts. Enable installs Chinese resources and hooks the active Steam language slot (no need to switch Steam to Dutch or any fixed language). Disable restores the previous language pack.
 
-```text
-dist/SmallWorld-cn.exe
-```
+> **Not affiliated with** [Days of Wonder](https://www.days-of-wonder.com/), Asmodee, or Valve. Personal / learning use only.
 
-It **embeds** the Chinese resources. Double-click it to:
+---
 
-| Button | Action |
-|--------|--------|
-| **启动游戏** | Launch via Steam only — does **not** turn Chinese on/off |
-| **启用中文 / 关闭中文** | Toggle: install+enable, or restore the original language pack |
+## Features
 
-You do **not** need to change Steam to Dutch. The tool hooks whatever language Steam is currently using (Japanese, English, …).
+- Full UI string tables (`zh.lproj`) plus baked Chinese menu / race / power plates
+- Compendium / rulebook pages in Simplified Chinese
+- Thicker CJK UI fonts ([Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC), SIL OFL) under the font names Cocos already loads
+- Rulebook CSS tweaks for high-resolution displays
+- Hooks whatever language Steam is currently using (English, Japanese, …)
+- Reversible: stock language pack and fonts are backed up under `%LOCALAPPDATA%\SmallWorld2-zh-cn\`
+- One-file player build — no Python and no separate installer
 
-**v2.1.0+** also installs thicker Simplified Chinese UI fonts (Noto Sans SC) and bumps rulebook CSS so high-resolution displays stay readable.
+## Requirements
 
-No Python and no separate installer are required on the player’s PC.
+| Role | Need |
+|------|------|
+| **Players** | Windows, Steam *Small World 2*, admin rights if the game is under `Program Files` |
+| **Developers** | Python 3.11+, packages in [`requirements.txt`](requirements.txt) |
 
-### CLI (optional)
+Steam app ID: `235620`.
+
+Compatible with the unofficial [HD pack](https://github.com/kyle-ip/small-world-hd).
+
+## Install (players)
+
+1. Download **`SmallWorld-cn.exe`** from [Releases](https://github.com/kyle-ip/small-world-zh-cn/releases/latest).
+2. Double-click the EXE.
+3. Click **启用中文**, then start the game from Steam or via **启动游戏**.
+
+You do **not** need to change the Steam language. Quit the game before toggling Chinese on or off. Steam “Verify integrity of game files” may restore official files — enable Chinese again afterward.
+
+### CLI
 
 ```bat
 SmallWorld-cn.exe --enable
@@ -34,30 +52,52 @@ SmallWorld-cn.exe --launch
 SmallWorld-cn.exe --uninstall
 ```
 
-## For developers
+| Flag | Meaning |
+|------|---------|
+| `--enable` | Install Chinese payload and enable the language hook |
+| `--disable` | Restore the previous language pack / fonts |
+| `--launch` | Start the game via Steam (does not change the Chinese switch by itself) |
+| `--uninstall` | Remove the Chinese install and clear local config where applicable |
+
+## Development
 
 ```bat
 git clone https://github.com/kyle-ip/small-world-zh-cn.git
 cd small-world-zh-cn
 python -m pip install -r requirements.txt
+python launcher\app.py
+```
+
+The clone includes a complete `payload/` (strings, images, compendium, OFL fonts). That is enough to run the launcher or rebuild the player EXE:
+
+```bat
 powershell -ExecutionPolicy Bypass -File tools\build_allinone.ps1
 ```
 
-Requires Python 3.11+, packages in `requirements.txt`. Icon is taken from a local `SmallWorld.exe` when present.
+Icon extraction uses a local `SmallWorld.exe` when available (`icoextract`).
 
-The clone includes the full `payload/` (Chinese strings, baked images, compendium, OFL fonts). That is enough to run or rebuild the player EXE. Regenerating artwork from English/Japanese sources additionally needs a Small World 2 install.
+Regenerating baked art from English/Japanese sources additionally needs a *Small World 2* install and the scripts under `tools/` (see `docs/`).
 
-Repo layout:
+### Repository layout
 
 ```text
-payload/     Chinese assets embedded into the EXE at build time
-launcher/    GUI / Steam hook / payload install source
-tools/       build scripts
-docs/        notes
+payload/     Chinese assets (embedded into the EXE at build time)
+launcher/    GUI, Steam language hook, payload install
+tools/       Build, localization, and verification scripts
+docs/        Design notes and known issues
+installer/   Legacy Inno Setup flow (optional; EXE is the supported deliverable)
+glossary/    Terminology reference
 ```
 
-The older Inno Setup flow under `installer/` is optional legacy; the supported player deliverable is **`SmallWorld-cn.exe`**.
+## Related projects
+
+- [small-world-hd](https://github.com/kyle-ip/small-world-hd) — unofficial HD texture / polish overlay
 
 ## Disclaimer
 
-Unofficial, for learning only. Do not sell this patch or redistribute the game.
+This is an unofficial fan project for personal learning.
+
+- Do **not** sell this patch.
+- Do **not** redistribute *Small World 2* or official Days of Wonder assets as a standalone game dump.
+- Bundled CJK fonts are **Noto Sans SC** ([SIL Open Font License](https://scripts.sil.org/OFL)).
+- Use at your own risk; keep Steam verify / the built-in disable path available.
