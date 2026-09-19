@@ -37,10 +37,15 @@ SmallWorld-cn.exe --uninstall
 ## For developers
 
 ```bat
+git clone https://github.com/kyle-ip/small-world-zh-cn.git
+cd small-world-zh-cn
+python -m pip install -r requirements.txt
 powershell -ExecutionPolicy Bypass -File tools\build_allinone.ps1
 ```
 
-Requires Python 3.11+, `pyinstaller`, `pillow`, `icoextract` (icon taken from `SmallWorld.exe`).
+Requires Python 3.11+, packages in `requirements.txt`. Icon is taken from a local `SmallWorld.exe` when present.
+
+The clone includes the full `payload/` (Chinese strings, baked images, compendium, OFL fonts). That is enough to run or rebuild the player EXE. Regenerating artwork from English/Japanese sources additionally needs a Small World 2 install.
 
 Repo layout:
 

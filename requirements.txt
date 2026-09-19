@@ -1,0 +1,7 @@
+# Runtime / build dependencies for Small World 2 Chinese pack
+pillow>=10.0.0
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+fonttools>=4.40.0
+pyinstaller>=6.0.0
+icoextract>=0.1.4
