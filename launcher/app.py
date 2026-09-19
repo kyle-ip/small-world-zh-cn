@@ -23,12 +23,15 @@ import payload_install  # noqa: E402
 import steam_lang  # noqa: E402
 
 APP_TITLE = "小小世界 · 中文补丁"
-APP_VERSION = "2.0.2"
+APP_VERSION = "2.1.2"
 BG = "#ffffff"
 SIDE = "#e8f2fc"
 TEXT = "#1a1a1a"
 MUTED = "#5c5c5c"
 ACCENT = "#3278c8"
+# Right panel content width (logical px before DPI scale)
+MAIN_WIDTH = 420
+MAIN_HEIGHT = 400
 
 
 def _dpi_scale() -> float:
@@ -54,6 +57,23 @@ def _bundled_ico() -> Path | None:
         candidates.append(meipass / "app.ico")
         candidates.append(HERE / "app.ico")
     candidates.append(Path(__file__).resolve().parent / "app.ico")
+    for path in candidates:
+        if path.is_file():
+            return path
+    return None
+
+
+def _bundled_cover() -> Path | None:
+    """Launcher left-panel art (cover.png)."""
+    candidates: list[Path] = []
+    if getattr(sys, "frozen", False):
+        meipass = Path(getattr(sys, "_MEIPASS", ""))
+        candidates.append(meipass / "cover.png")
+        candidates.append(HERE / "cover.png")
+    here = Path(__file__).resolve().parent
+    candidates.append(here / "cover.png")
+    # Dev convenience: game-root cover next to the repo
+    candidates.append(here.parents[1] / "cover.png")
     for path in candidates:
         if path.is_file():
             return path
@@ -88,6 +108,9 @@ def ensure_installed(game: Path | None = None) -> Path:
         raise FileNotFoundError(f"Not a Small World 2 folder: {game}")
     if not payload_install.zh_files_present(game):
         payload_install.install_payload(game)
+    else:
+        # Re-sync CSS + CJK fonts (covers upgrades while zh.lproj already present)
+        payload_install.install_payload(game)
     return game
 
 
@@ -97,7 +120,12 @@ def do_enable() -> str:
 
 
 def do_disable() -> str:
-    return steam_lang.apply_chinese_enabled(False)
+    msg = steam_lang.apply_chinese_enabled(False)
+    try:
+        payload_install.restore_fonts(steam_lang.find_game_dir())
+    except Exception:
+        pass
+    return msg
 
 
 def do_launch() -> None:
@@ -153,10 +181,8 @@ class App(tk.Tk):
         self.scale = scale
         self._busy = False
         self._photo_icons: list[tk.PhotoImage] = []  # keep refs alive
+        self._cover_photo: tk.PhotoImage | None = None
         self.title(APP_TITLE)
-        w, h = int(580 * scale), int(400 * scale)
-        self.geometry(f"{w}x{h}")
-        self.minsize(w, h)
         self.resizable(False, False)
         self.configure(bg=BG)
         try:
@@ -203,24 +229,60 @@ class App(tk.Tk):
         except Exception:
             pass
 
+    def _load_cover(self, height_px: int) -> tuple[tk.PhotoImage | None, int, int]:
+        """Scale cover.png to ``height_px`` tall, keeping aspect (no crop / stretch)."""
+        path = _bundled_cover()
+        if not path:
+            return None, int(120 * self.scale), height_px
+        try:
+            from PIL import Image, ImageTk
+
+            img = Image.open(path).convert("RGBA")
+            ow, oh = img.size
+            if oh <= 0:
+                return None, int(120 * self.scale), height_px
+            side_h = max(1, height_px)
+            side_w = max(1, int(round(side_h * (ow / oh))))
+            # Exact panel fit: panel is sized to image aspect, so resize is 1:1 aspect
+            img = img.resize((side_w, side_h), Image.Resampling.LANCZOS)
+            photo = ImageTk.PhotoImage(img)
+            return photo, side_w, side_h
+        except Exception:
+            return None, int(120 * self.scale), height_px
+
     def _build(self) -> None:
         s = self.scale
+        main_w = int(MAIN_WIDTH * s)
+        main_h = int(MAIN_HEIGHT * s)
+
+        cover, side_w, side_h = self._load_cover(main_h)
+        self._cover_photo = cover
+        win_w = side_w + main_w
+        win_h = max(side_h, main_h)
+        self.geometry(f"{win_w}x{win_h}")
+        self.minsize(win_w, win_h)
+
         root = tk.Frame(self, bg=BG)
         root.pack(fill="both", expand=True)
 
-        side = tk.Frame(root, bg=SIDE, width=int(120 * s))
+        side = tk.Frame(root, bg=SIDE, width=side_w, height=win_h)
         side.pack(side="left", fill="y")
         side.pack_propagate(False)
-        tk.Label(side, text="ZH", font=_font(s, 28, True), bg=SIDE, fg=ACCENT).place(
-            relx=0.5, rely=0.42, anchor="center"
-        )
+        if cover is not None:
+            tk.Label(side, image=cover, bg=SIDE, borderwidth=0, highlightthickness=0).place(
+                x=0, y=0, width=side_w, height=side_h
+            )
+        else:
+            tk.Label(side, text="ZH", font=_font(s, 28, True), bg=SIDE, fg=ACCENT).place(
+                relx=0.5, rely=0.42, anchor="center"
+            )
 
-        main = tk.Frame(root, bg=BG)
+        main = tk.Frame(root, bg=BG, width=main_w)
         main.pack(side="left", fill="both", expand=True, padx=int(28 * s), pady=int(22 * s))
 
         tk.Label(
             main,
-            text="小小世界 2 中文语言包",
+            text="小小世界中文语言包",
             font=_font(s, 18, True),
             bg=BG,
             fg=TEXT,

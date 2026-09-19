@@ -7,11 +7,17 @@ $python = "C:\Python311\python.exe"
 if (-not (Test-Path $python)) { $python = "python" }
 
 Write-Host "==> Extract SmallWorld.exe icon (icoextract)"
-& $python -m pip install --quiet icoextract pillow pyinstaller
+& $python -m pip install --quiet icoextract pillow pyinstaller fonttools
 & $python launcher\extract_icon.py
+
+if (-not (Test-Path "payload\Resources\fonts\arialmt.ttf")) {
+  Write-Host "==> Build CJK UI fonts (Noto Sans SC)"
+  & $python tools\build_cjk_fonts.py
+}
 
 $icon = (Resolve-Path "launcher\app.ico").Path
 $payload = (Resolve-Path "payload\Resources").Path
+$cover = (Resolve-Path "launcher\cover.png").Path
 
 Write-Host "==> Build all-in-one EXE (icon from SmallWorld.exe + embedded payload)"
 New-Item -ItemType Directory -Force -Path dist | Out-Null
@@ -31,6 +37,7 @@ New-Item -ItemType Directory -Force -Path dist | Out-Null
   --collect-all PIL `
   --add-data "$payload;payload/Resources" `
   --add-data "$icon;." `
+  --add-data "$cover;." `
   launcher\app.py
 
 if (-not (Test-Path "dist\SmallWorld-cn.exe")) {

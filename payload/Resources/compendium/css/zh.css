@@ -1,0 +1,75 @@
+/* Small World 2 — Chinese rulebook overrides (WebView / IE-friendly).
+ *
+ * Stock CSS forces `font-family: Tahoma` on `a` / `html`. Tahoma has no CJK,
+ * so glyphs fall back to a thin system face — looks tiny / uneven at high DPI.
+ * Book panes are also ~300–400px wide, so min-width:500px+ media queries never fire.
+ */
+
+@font-face {
+  font-family: "SW2Zh";
+  src: url("../../fonts/arialmt.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SW2Zh";
+  src: url("../../fonts/arialboldmt.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  /* Absolute px — ignore broken em-based shrink queries on tiny panes */
+  font-size: 20px !important;
+  background-color: #fffbef;
+}
+
+html, body,
+p, li, td, div, span, h1, h2, h3,
+a, a:link, a:visited, a:hover, a:active,
+a.toc_item, .toc_item, ul, ol {
+  font-family: "SW2Zh", "Microsoft YaHei", "微软雅黑", SimHei, "黑体",
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 1.2em !important;
+  line-height: 1.55 !important;
+  font-weight: bold !important;
+}
+
+p, li {
+  font-size: 1.15em !important;
+  line-height: 1.6 !important;
+  font-weight: bold !important;
+}
+
+a, a:link, a:visited, a.toc_item, .toc_item {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  line-height: 1.55 !important;
+  /* Faux stroke helps thin ClearType in embedded WebView */
+  text-shadow: 0 0 0.6px currentColor, 0 0 0.6px currentColor;
+}
+
+h1, h2, h3 {
+  font-weight: bold !important;
+  font-size: 1.45em !important;
+  letter-spacing: 0.03em;
+}
+
+/* Defeat stock shrink/enlarge media queries */
+@media screen and (max-width: 10em) {
+  html { font-size: 18px !important; }
+  a, a.toc_item { font-size: 1.15em !important; }
+  h1 { font-size: 1.35em !important; }
+}
+
+@media screen and (min-width: 500px) {
+  html { font-size: 22px !important; }
+  a, a.toc_item { font-size: 1.25em !important; }
+  p, li { font-size: 1.2em !important; }
+}

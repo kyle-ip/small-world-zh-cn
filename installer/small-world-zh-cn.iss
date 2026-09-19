@@ -48,8 +48,8 @@ Name: "chinesesimplified"; MessagesFile: "ChineseSimplified.isl"
 
 [Messages]
 chinesesimplified.WelcomeLabel1=欢迎使用小小世界中文语言包安装向导
-chinesesimplified.WelcomeLabel2=本程序将把中文资源安装到你的 Small World 2 游戏目录，并自动启用中文。%n%n无需在 Steam 中改成荷兰语或其他语言：启动器会按你当前的 Steam 游戏语言自动挂接中文。%n%n请确认下方游戏路径正确（可点击浏览修改），然后点击“下一步”继续。
-chinesesimplified.SelectDirLabel3=请指定 Small World 2 的游戏根目录（需包含 SmallWorld.exe）：
+chinesesimplified.WelcomeLabel2=本程序将把中文资源安装到你的小小世界游戏目录，并自动启用中文。%n%n无需在 Steam 中改成荷兰语或其他语言：启动器会按你当前的 Steam 游戏语言自动挂接中文。%n%n请确认下方游戏路径正确（可点击浏览修改），然后点击“下一步”继续。
+chinesesimplified.SelectDirLabel3=请指定小小世界的游戏根目录（需包含 SmallWorld.exe）：
 chinesesimplified.FinishedHeadingLabel=安装完成
 chinesesimplified.FinishedLabelNoIcons=中文语言包已安装并启用。%n%n请从 Steam 启动 Small World，或使用开始菜单中的“启动小小世界（中文）”。%n关闭中文请使用“中文开关”工具或卸载本补丁。
 
@@ -159,7 +159,7 @@ begin
   begin
     if not FileExists(ExpandConstant('{app}\SmallWorld.exe')) then
     begin
-      MsgBox('请选择 Small World 2 的游戏根目录（该文件夹内必须有 SmallWorld.exe）。', mbError, MB_OK);
+      MsgBox('请选择小小世界的游戏根目录（该文件夹内必须有 SmallWorld.exe）。', mbError, MB_OK);
       Result := False;
     end;
   end;

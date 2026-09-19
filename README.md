@@ -1,4 +1,4 @@
-# Small World — Unofficial Simplified Chinese Language Pack
+# 小小世界 — 非官方简体中文语言包
 
 ![](./assets/Default-Landscape.png)
 
@@ -20,6 +20,8 @@ It **embeds** the Chinese resources. Double-click it to:
 | **启用中文 / 关闭中文** | Toggle: install+enable, or restore the original language pack |
 
 You do **not** need to change Steam to Dutch. The tool hooks whatever language Steam is currently using (Japanese, English, …).
+
+**v2.1.0+** also installs thicker Simplified Chinese UI fonts (Noto Sans SC) and bumps rulebook CSS so high-resolution displays stay readable.
 
 No Python and no separate installer are required on the player’s PC.
 
