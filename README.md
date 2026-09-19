@@ -1,4 +1,4 @@
-# 小小世界 — 非官方简体中文语言包
+# Small World — Unofficial Simplified Chinese Language Pack
 
 ![](./assets/Default-Landscape.png)
 
